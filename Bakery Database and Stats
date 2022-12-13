@@ -1,0 +1,18 @@
+CREATE TABLE bakery (id INTEGER PRIMARY KEY, name TEXT, cost_to_make INTEGER, quantity_sold INTEGER, sale_price INTEGER);    (This is were I created the table.)
+INSERT INTO bakery VALUES (1, 'vanilla cupcake', 2, 10, 5);
+INSERT INTO bakery VALUES (2, 'chocolate cupcake', 2, 15, 5);
+INSERT INTO bakery VALUES (3, 'brownie', 1, 12, 4);
+INSERT INTO bakery VALUES (4, 'sugar cookie', 2, 17, 4);
+INSERT INTO bakery VALUES (5, "chocolate chip cookie", 2, 20, 4);
+INSERT INTO bakery VALUES (6, 'peanut butter cookie', 2, 18, 4);
+INSERT INTO bakery VALUES (7, 'oatmeal cookie', 2, 17, 4);
+INSERT INTO bakery VALUES (8, 'cinnamon roll', 4, 19, 6);
+INSERT INTO bakery VALUES (9, 'blueberry muffin', 2, 14, 4);
+INSERT INTO bakery VALUES (10, 'red velvet cupcake', 2, 13, 5);
+INSERT INTO bakery VALUES (11, 'pumpkin scone', 3, 7, 6);
+INSERT INTO bakery VALUES (12, 'brookie', 1, 10, 3);
+INSERT INTO bakery VALUES (13, 'rice krispie treat', 2, 11, 4);
+INSERT INTO bakery VALUES (14, 'cake pop', 1, 5, 2);
+INSERT INTO bakery VALUES (15, 'blondie', 1, 7, 2);
+SELECT * FROM bakery ORDER BY sale_price ASC;         (This is where I sorted the table by sale price in ascending order.)
+SELECT SUM(sale_price) FROM bakery                    (This is where I used the SUM function to show the total revenue of items sold.)
